@@ -1,10 +1,18 @@
-name: example
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                checkout scm
 
-on: push
+                sh 'jenkinsfile1'
+                sh 'jenkinsfile1'
+                sh '''#!/bin/sh'''
 
-jobs:
-  job_1:
-    runs-on: ubuntu-latest
-    steps:
-      - name: My first step
-        run: echo This is the first step of my first job.
+
+                
+
+            }
+        }
+    }
+}
