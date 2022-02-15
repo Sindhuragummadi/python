@@ -1,0 +1,15 @@
+test:
+  number: 5
+  string: Hello world
+  boolean: true
+  list:
+    - Each
+    - word
+    - will
+    - be
+    - in
+    - a
+    - separated
+    - entry
+math:
+  pi: 3.141592653589793
