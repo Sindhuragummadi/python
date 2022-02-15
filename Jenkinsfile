@@ -5,13 +5,12 @@ pipeline {
             steps {
                 checkout scm
 
-                sh 'jenkinsfile1'
-                sh 'jenkinsfile1'
-                sh '''#!/bin/sh'''
-
-
+                sh 'python test.py'
+                sh '''#!/bin/sh
                 
-
+                echo "This is a sample pipeline"
+                
+                '''
             }
         }
     }
