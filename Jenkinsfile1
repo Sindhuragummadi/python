@@ -1,15 +1,10 @@
-test:
-  number: 5
-  string: Hello world
-  boolean: true
-  list:
-    - Each
-    - word
-    - will
-    - be
-    - in
-    - a
-    - separated
-    - entry
-math:
-  pi: 3.141592653589793
+name: example
+
+on: push
+
+jobs:
+  job_1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: My first step
+        run: echo This is the first step of my first job.
